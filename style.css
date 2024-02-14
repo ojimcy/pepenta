@@ -1,0 +1,235 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #4c9540;
+  color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  height: 150px;
+  background-color: transparent;
+  box-shadow: 0px 2px 5px rgba(238, 223, 223, 0.5);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #f8f9fa;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #970e4c;
+}
+
+.animated-navbar {
+  animation: slideIn 0.85s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Custom styles for hero section */
+.hero-section {
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.hero-section h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+  font-family: 'Genty Demo Regular', sans-serif;
+  letter-spacing: -1.2px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.hero-section img {
+  height: auto;
+}
+
+/* General animation for elements with .animate class */
+.animate {
+  animation-duration: 1.85s; /* Adjust duration as needed */
+  animation-fill-mode: forwards;
+  opacity: 0; /* Elements start hidden by default */
+}
+
+/* Define specific animations using keyframes */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Custom styles for animated hero section */
+.animate-left {
+  animation: slideInLeft 1.85s forwards;
+}
+
+.animate-right {
+  animation: slideInRight 1.85s forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Custom styles for about section */
+.about-section {
+  padding: 100px 0;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Custom styles for tokenomics section */
+.tokenomics-section {
+  padding: 100px 0;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.tokenomics-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-box {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 1.2rem;
+}
+
+/* Custom styles for contact section */
+.contact-section {
+  padding: 100px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: #970e4c;
+}
+
+/* Custom styles for footer section */
+.footer-section {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-section p {
+  font-size: 0.5rem;
+  margin: 0;
+}
