@@ -16,6 +16,11 @@ body {
   color: #f8f9fa;
 }
 
+.navbar-brand img {
+  width: 50px;
+
+}
+
 .navbar-nav .nav-link {
   font-size: 1.2rem;
 }
@@ -255,4 +260,9 @@ body {
 .btn-chart {
   background-color: #f44336; /* Red */
   border: none;
+}
+
+.contact-section img {
+  width: 100px;
+  margin-bottom: 30px;
 }
