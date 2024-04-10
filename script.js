@@ -1,27 +1,22 @@
-const elements = document.querySelectorAll('.animate-on-scroll');
+function copyContractAddress() {
+  // Select the contract address span element
+  const contractAddress = document.getElementById('contract-address');
 
-function checkViewport() {
-  elements.forEach((element) => {
-    if (isElementInViewport(element)) {
-      element.classList.add('animate');
-    } else {
-      element.classList.remove('animate');
-    }
-  });
+  // Create a temporary input element
+  const tempInput = document.createElement('input');
+  tempInput.value = contractAddress.innerText;
+  document.body.appendChild(tempInput);
+
+  // Select the text in the input element
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+  // Copy the text to the clipboard
+  document.execCommand('copy');
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  // Alert the user
+  alert('Contract address copied to clipboard!');
 }
-
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-// Check viewport on page load
-checkViewport();
-
-// Check viewport on scroll
-window.addEventListener('scroll', checkViewport);

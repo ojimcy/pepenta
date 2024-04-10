@@ -24,10 +24,7 @@
       name="twitter:description"
       content="Pepenta, the daughter of Pepe and Pepa, the most memeable memecoin ever. Born into a family of internet legends, Pepenta carries on the legacy of her parents with pride."
     />
-    <meta
-      name="twitter:image"
-      content="images/pepenta.PNG"
-    />
+    <meta name="twitter:image" content="images/pepenta.PNG" />
     <!-- Link Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -47,6 +44,11 @@
       referrerpolicy="no-referrer"
     />
     <!-- Custom CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beyond+The+Mountains&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/pepenta.PNG" type="image/x-icon" />
   </head>
@@ -82,6 +84,22 @@
                 >Tokenomics</a
               >
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link animated-navbar social"
+                href="https://twitter.com/pepentasol"
+                class="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link animated-navbar social"
+                href="https://twitter.com/pepentasol"
+                class="twitter"
+                ><i class="fab fa-telegram"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -99,8 +117,24 @@
               <br />
               Family first, the Pepes' are taking over.
             </p>
-            <!-- Meme-like buttons -->
 
+            <!-- Contract Address with Copy Button -->
+            <div class="contract-address-container">
+              <p>
+                Contract Address:
+                <span class="ca" id="contract-address"
+                  >3G4g5eCefpH31BCxanPRhFbCpoL8GU4u7FivEaZsa7qT</span
+                >
+                <button
+                  class="btn btn-outline-primary btn-copy"
+                  onclick="copyContractAddress()"
+                >
+                  <i class="far fa-copy"></i> Copy
+                </button>
+              </p>
+            </div>
+
+            <!-- Meme-like buttons -->
             <div class="button-container">
               <button class="btn btn-primary btn-buy">
                 <i class="fas fa-shopping-cart"></i> Buy
@@ -159,7 +193,7 @@
             </div>
             <div class="col-12 col-md-6 tokenomics-content">
               <div class="info-box">
-                <p>Total Supply: 1 Billion</p>
+                <p>Total Supply: 100 Million</p>
               </div>
               <div class="info-box">
                 <p>Chain: SOLANA</p>
@@ -192,7 +226,9 @@
           />
           <p><strong>Email:</strong> team@pepenta.com</p>
           <div class="social-icons">
-            <a href="https://twitter.com/pepentasol" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/pepentasol" class="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
             <a href="#" class="telegram"><i class="fab fa-telegram"></i></a>
           </div>
         </div>
